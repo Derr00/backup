@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALL EMPLOYEES</title>
+</head>
+<body>
+<H2>ALL EMPLOYEES ON OUR DATABASE</H2>
+<table>
+    <thead>
+
+    </thead>
+    <tbody>
+    {% for employee in show %}
+    <tr>
+        <td>NAME</td>
+        <td>AGE</td>
+        <td>BODY</td>
+        <td></td>
+        {%for%}
+        {%endfor%}
+        <td>{{employee.name}}</td>
+        <td>{{employee.age}}</td>
+        <td>{{employee.body}}</td>
+<td>
+    <a href="{% url'employee_update' employee.id%}"><button>UPDATE</button></a>
+    <a href=""><button>DELETE</button></a>
+
+
+</td>
+    </tr>
+
+    </tbody>
+</table>
+
+</body>
+</html>
